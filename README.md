@@ -30,7 +30,7 @@
 * **원격 인젝터 / 언로더**
   * `ptrace`를 통해 타겟 프로세스 내 `mmap`, `dlopen`, `dlclose` 원격 호출
 * **제어 도구 (`msterctl`)**
-  * CLI 환경에서 데몬 상태 확인(`ping`), 라이브러리 주입(`inject`), 제거(`unload`) 명령 전송
+  * CLI 환경에서 데몬 상태 확인(`ping`), 라이브러리 주입(`inject`) 명령 전송
 
 ---
 
@@ -90,10 +90,11 @@ $CLANG -O2 -fPIE -pie dummy_target.c -o dummy_target$CLANG -O2 -shared -fPIC -Ii
 
 # 3. 타겟 프로세스에 트윅 주입
 /data/local/tmp/msterctl inject <타겟_PID> /data/local/tmp/libmy_tweak.so
-
-# 4. 트윅 언로드
-/data/local/tmp/msterctl unload <타겟_PID> /data/local/tmp/libmy_tweak.so
 ```
+
+## 현재 문제
+1. unload 명령이 작동하지 않음.(명령이 없습니다 오류)
+2. (단점) 프로세스에 트윅을 주입 후 프로세스를 종료시키고 다시 키면 트윅이 사라짐.
 
 ## 라이선스
 BSD-3-Clause
