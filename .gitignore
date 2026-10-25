@@ -1,0 +1,14 @@
+*.o
+*.so
+msterd
+msterctl
+dummy_target
+libtest_payload.so
+libmsterkit.so
+libmy_tweak.so
+
+.vscode/
+.idea/
+*.swp
+.DS_Store
+mster_test
