@@ -34,7 +34,7 @@
 
 ---
 
-## 🏗️ 빌드 방법
+## 빌드 방법
 
 Android NDK(Clang, `aarch64-linux-android`) 환경에서 크로스 컴파일합니다.
 
@@ -61,7 +61,7 @@ export CLANG=$TOOLCHAIN/bin/aarch64-linux-android34-clang
 ```Powershell
 $CLANG = "C:\Users\$env:USERNAME\AppData\Local\Android\Sdk\ndk\<NDK버전>\toolchains\llvm\prebuilt\windows-x86_64\bin\aarch64-linux-android34-clang.cmd"
 ```
-> 💡 참고: 안드로이드 API 레벨은 필요에 따라 android30~android34 사이로 맞춰주면 됩니다.
+> 참고: 안드로이드 API 레벨은 필요에 따라 android30~android34 사이로 맞춰주면 됩니다.
 
 ### 2. 컴파일 명령
 환경 변수를 잡았다면 Linux와 macOS 모두 동일한 명령어로 빌드됩니다.
@@ -94,3 +94,6 @@ $CLANG -O2 -fPIE -pie dummy_target.c -o dummy_target$CLANG -O2 -shared -fPIC -Ii
 # 4. 트윅 언로드
 /data/local/tmp/msterctl unload <타겟_PID> /data/local/tmp/libmy_tweak.so
 ```
+
+## 라이선스
+BSD-3-Clause
