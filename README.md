@@ -6,9 +6,9 @@
 
 **안드로이드 ARM64 온디맨드 인젝터 & 인라인 후킹 프레임워크**
 
-![Architecture](https://img.shields.io/badge/Arch-ARM64-red?style=flat-square&logo=arm)
-![Platform](https://img.shields.io/badge/Platform-Android%20NDK-3DDC84?style=flat-square&logo=android)
-![Status](https://img.shields.io/badge/Status-Toy%20PoC-orange?style=flat-square)
+![Architecture](https://img.shields.io/badge/Arch-ARM64-red?&logo=arm)
+![Platform](https://img.shields.io/badge/Platform-Android%20NDK-3DDC84?&logo=android)
+![Status](https://img.shields.io/badge/Status-Toy%20PoC-orange)
 
 </div>
 안드로이드(ARM64) 환경에서 프로세스 메모리 조작과 인라인 후킹을 공부해보려고 만든 개인 토이 프로젝트입니다.
